@@ -1,0 +1,5 @@
+[nas]
+domain = "tachikomanas.local"
+mountDir = "/media/tachikoma"
+mainStorage = "Storage"
+backup = "Backup"
