@@ -1,2 +1,11 @@
 README.md
 .secrets
+chezmoi.toml
+files/
+files/**
+scripts/
+scripts/**
+**/.venv/
+**/.venv/**
+**/venv/
+**/venv/**

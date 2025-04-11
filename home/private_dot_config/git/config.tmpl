@@ -1,15 +1,16 @@
 [user]
 	name = {{ .user.fullName }}
 	email = {{ .user.email }}
-[merge]
-	tool = meld
-[mergetool "meld"]
-	path = /usr/bin/meld
-[mergetool]
-	prompt = false
-	keepBackup = false
-	trustExitCode = false
+[commit]
+	gpgSign = false
+[pull]
+	rebase = false
+[gui]
+	pruneduringfetch = true
+[push]
+	recurseSubmodules = check
 [diff]
+	tool = meld
 	guitool = meld
 [difftool "meld"]
 	path = /usr/bin/meld
@@ -17,3 +18,13 @@
 	prompt = false
 	keepBackup = false
 	trustExitCode = false
+[merge]
+	tool = meld
+	guitool = meld
+[mergetool "meld"]
+	path = /usr/bin/meld
+[mergetool]
+	prompt = false
+	keepBackup = false
+	trustExitCode = false
+

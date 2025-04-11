@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../work/github/ttkbootstrap"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#350F82",
+			"titleBar.activeBackground": "#4A14B6",
+			"titleBar.activeForeground": "#FBF9FE"
+		}
+	}
+}
