@@ -9,7 +9,7 @@ PATCH="{{ .chezmoi.sourceDir }}/files/locale-fix.sed"
 
 if [ ! -f "$DST" ]; then
   echo "Generating $DST from $SRC..."
-  sudo sed -f "$PATCH" "$SRC" > "$DST"
+  sed -f "$PATCH" "$SRC" | sudo tee "$DST" > /dev/null
   sudo localedef -i hu_HU_custom -f UTF-8 hu_HU.UTF-8@custom
   echo "Custom locale changed to $DST"
 else
