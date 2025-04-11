@@ -5,7 +5,7 @@ set -e
 locale_dir="/usr/share/i18n/locales"
 SRC="$locale_dir/hu_HU"
 DST="$locale_dir/hu_HU_custom"
-PATCH="{{- .chezmoi.sourceDir -}}/files/locale-fix.sed"
+PATCH="$CHEZMOI_SOURCE_DIR/files/locale-fix.sed"
 
 if [ ! -f "$DST" ]; then
   echo "Generating $DST from $SRC..."
