@@ -489,8 +489,8 @@ translate=true
 
 [org/gnome/desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/tachikoma/Pictures/Wallpapers/DA_landscape_by_lxlbanner_dgpaqsi_result.jpg'
-picture-uri-dark='file:///home/tachikoma/Pictures/Wallpapers/DA_landscape_by_lxlbanner_dgpaqsi_result.jpg'
+picture-uri='file://{{ .chezmoi.homeDir }}/Pictures/Wallpapers/DA_landscape_by_lxlbanner_dgpaqsi_result.jpg'
+picture-uri-dark='file://{{ .chezmoi.homeDir }}/Pictures/Wallpapers/DA_landscape_by_lxlbanner_dgpaqsi_result.jpg'
 primary-color='#ffffff'
 secondary-color='#000000'
 
@@ -646,7 +646,7 @@ report-technical-problems=true
 
 [org/gnome/desktop/screensaver]
 picture-options='zoom'
-picture-uri='file:///home/tachikoma/Pictures/Wallpapers/DA_landscape_by_lxlbanner_dgpaqsi_result.jpg'
+picture-uri='file://{{ .chezmoi.homeDir }}/Pictures/Wallpapers/DA_landscape_by_lxlbanner_dgpaqsi_result.jpg'
 primary-color='#ffffff'
 secondary-color='#000000'
 
@@ -827,52 +827,52 @@ initial-size=(1350, 856)
 maximized=false
 
 [org/gnome/portal/filechooser/com.brave.Browser]
-last-folder-path='/home/tachikoma/Downloads'
+last-folder-path='{{ .chezmoi.homeDir }}/Downloads'
 
 [org/gnome/portal/filechooser/com.calibre_ebook.calibre]
-last-folder-path='/media/tachikoma/Backup/Backup/CalibreDB'
+last-folder-path='{{ .nas.mountDirBackup }}/Backup/CalibreDB'
 
 [org/gnome/portal/filechooser/com.gitbutler.gitbutler]
-last-folder-path='/home/tachikoma/work/github/ecalc'
+last-folder-path='{{ .chezmoi.homeDir }}/work/github/ecalc'
 
 [org/gnome/portal/filechooser/com.github.Murmele.Gittyup]
-last-folder-path='/home/tachikoma/work/github/fuel-budget-monitor'
+last-folder-path='{{ .chezmoi.homeDir }}/work/github/fuel-budget-monitor'
 
 [org/gnome/portal/filechooser/com.github.git_cola.git-cola]
-last-folder-path='/home/tachikoma/work/github/ecalc'
+last-folder-path='{{ .chezmoi.homeDir }}/work/github/ecalc'
 
 [org/gnome/portal/filechooser/com.spotify.Client]
-last-folder-path='/media/tachikoma/Storage/Music/Spotify'
+last-folder-path='{{ .nas.mountDirStorage }}/Music/Spotify'
 
 [org/gnome/portal/filechooser/com.valvesoftware.Steam]
-last-folder-path='/run/user/1000/doc/1e42d7e/Games'
+last-folder-path='/run/user/{{ .chezmoi.uid }}/doc/1e42d7e/Games'
 
 [org/gnome/portal/filechooser/io.github.aganzha.Stage]
-last-folder-path='/home/tachikoma/work/github/ecalc'
+last-folder-path='{{ .chezmoi.homeDir }}/work/github/ecalc'
 
 [org/gnome/portal/filechooser/io.github.realmazharhussain.GdmSettings]
-last-folder-path='/home/tachikoma/Downloads'
+last-folder-path='{{ .chezmoi.homeDir }}/Downloads'
 
 [org/gnome/portal/filechooser/org.bunkus.mkvtoolnix-gui]
-last-folder-path='/media/tachikoma/Storage'
+last-folder-path='{{ .nas.mountDirStorage }}'
 
 [org/gnome/portal/filechooser/org.chromium.Chromium]
-last-folder-path='/home/tachikoma/Downloads'
+last-folder-path='{{ .chezmoi.homeDir }}/Downloads'
 
 [org/gnome/portal/filechooser/org.gitfourchette.gitfourchette]
-last-folder-path='/home/tachikoma/.local/share/chezmoi'
+last-folder-path='{{ .chezmoi.workingTree }}'
 
 [org/gnome/portal/filechooser/org.gnome.EasyTAG]
-last-folder-path='/home/tachikoma/Downloads'
+last-folder-path='{{ .chezmoi.homeDir }}/Downloads'
 
 [org/gnome/portal/filechooser/org.gnome.meld]
-last-folder-path='/home/tachikoma/work/github/spotify_playlist_snapshot'
+last-folder-path='{{ .chezmoi.homeDir }}/work/github/spotify_playlist_snapshot'
 
 [org/gnome/portal/filechooser/org.qbittorrent.qBittorrent]
-last-folder-path='/media/tachikoma/Storage/Torrent'
+last-folder-path='{{ .nas.mountDirStorage }}/Torrent'
 
 [org/gnome/portal/filechooser/org.telegram.desktop]
-last-folder-path='/home/tachikoma/Downloads'
+last-folder-path='{{ .chezmoi.homeDir }}/Downloads'
 
 [org/gnome/rhythmbox]
 maximized=true
@@ -900,7 +900,7 @@ scrobbling-enabled=true
 initial-stations-loaded=true
 
 [org/gnome/rhythmbox/rhythmdb]
-locations=['file:///media/tachikoma/Storage/Music']
+locations=['file://{{ .nas.mountDirStorage }}/Music']
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-last-coordinates=(47.376901439884811, 18.913599999999999)
@@ -938,7 +938,7 @@ search-entry-border-radius=(true, 25)
 shortcut-icon-type='Full_Color'
 
 [org/gnome/shell/extensions/burn-my-windows]
-active-profile='/home/tachikoma/.config/burn-my-windows/profiles/1739948074067269.conf'
+active-profile='{{ .chezmoi.homeDir }}/.config/burn-my-windows/profiles/1739948074067269.conf'
 last-extension-version=42
 prefs-open-count=1
 
