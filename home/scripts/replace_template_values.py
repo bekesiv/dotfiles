@@ -81,4 +81,6 @@ if __name__ == "__main__":
     templates = run_command(command)
 
     for template_file in templates.strip().split('\n'):
+        if '.venv' in template_file:
+            continue
         process_template_file(template_file, reversed_config)
