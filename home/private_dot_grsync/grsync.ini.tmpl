@@ -16,12 +16,12 @@ last_session=3_to_Nas
 
 [default]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.backup -}}/Backup/Photos
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/Photos
+text_source={{ .nas.mountDirBackup }}/Backup/Photos
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/Photos
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -55,8 +55,8 @@ check_superuser=false
 
 [Photos_to_Nas]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Photos/
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/Photos/
+text_source={{ .nas.mountDirStorage }}/Photos/
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/Photos/
 text_notes=
 text_com_before=
 text_com_after=
@@ -94,12 +94,12 @@ check_superuser=false
 
 [work_to_Windows]
 is_set=false
-text_source={{- .chezmoi.homeDir -}}/work/
-text_dest={{- .nas.mountDir -}}/{{- .nas.backup -}}/Work/
+text_source={{ .chezmoi.homeDir }}/work/
+text_dest={{ .nas.mountDirBackup }}/Work/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=false
 check_perm=false
 check_owner=false
@@ -133,12 +133,12 @@ check_superuser=false
 
 [Music_to_Nas]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Music/
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/Music/
+text_source={{ .nas.mountDirStorage }}/Music/
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/Music/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -172,12 +172,12 @@ check_superuser=false
 
 [Calibre_DB_to_Nas]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.backup -}}/Backup/CalibreDB
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/zData/Calibre
+text_source={{ .nas.mountDirBackup }}/Backup/CalibreDB
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/zData/Calibre
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -211,12 +211,12 @@ check_superuser=false
 
 [config_to_Storage]
 is_set=false
-text_source={{- .chezmoi.homeDir -}}/.config/
-text_dest={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Backup/.config
+text_source={{ .chezmoi.homeDir }}/.config/
+text_dest={{ .nas.mountDirStorage }}/Backup/.config
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -250,12 +250,12 @@ check_superuser=false
 
 [backup_to_Windows]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Backup/
-text_dest={{- .nas.mountDir -}}/{{- .nas.backup -}}/Backup/Linux/
+text_source={{ .nas.mountDirStorage }}/Backup/
+text_dest={{ .nas.mountDirBackup }}/Backup/{{ .chezmoi.kernel.ostype }}/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=false
 check_perm=false
 check_owner=false
@@ -289,12 +289,12 @@ check_superuser=false
 
 [backup_to_Nas]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Backup/
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/zData/Linux/
+text_source={{ .nas.mountDirStorage }}/Backup/
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/zData/{{ .chezmoi.kernel.ostype }}/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -328,12 +328,12 @@ check_superuser=false
 
 [Music_to_Windows]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Music/
-text_dest={{- .nas.mountDir -}}/{{- .nas.backup -}}/Music/
+text_source={{ .nas.mountDirStorage }}/Music/
+text_dest={{ .nas.mountDirBackup }}/Music/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=false
 check_perm=false
 check_owner=false
@@ -367,12 +367,12 @@ check_superuser=false
 
 [Documents_to_Windows]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Documents/
-text_dest={{- .nas.mountDir -}}/{{- .nas.backup -}}/Backup/Documents/
+text_source={{ .nas.mountDirStorage }}/Documents/
+text_dest={{ .nas.mountDirBackup }}/Backup/Documents/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=false
 check_perm=false
 check_owner=false
@@ -406,12 +406,12 @@ check_superuser=false
 
 [Videos_to_Nas]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.backup -}}/Recordings/
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/Recordings/
+text_source={{ .nas.mountDirBackup }}/Recordings/
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/Recordings/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -445,12 +445,12 @@ check_superuser=false
 
 [work_to_Nas]
 is_set=false
-text_source={{- .chezmoi.homeDir -}}/work/
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/zData/Work/
+text_source={{ .chezmoi.homeDir }}/work/
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/zData/Work/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -484,8 +484,8 @@ check_superuser=false
 
 [Photos_to_Windows]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Photos/
-text_dest={{- .nas.mountDir -}}/{{- .nas.backup -}}/Photos/
+text_source={{ .nas.mountDirStorage }}/Photos/
+text_dest={{ .nas.mountDirBackup }}/Photos/
 text_notes=
 text_com_before=
 text_com_after=
@@ -523,12 +523,12 @@ check_superuser=false
 
 [Documents_to_Nas]
 is_set=false
-text_source={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Documents/
-text_dest=/run/user/{{- .chezmoi.uid -}}/gvfs/smb-share:server={{- .nas.domain -}},share=media/zData/Documents/
+text_source={{ .nas.mountDirStorage }}/Documents/
+text_dest=/run/user/{{ .chezmoi.uid }}/gvfs/smb-share:server={{ .nas.domain }},share=media/zData/Documents/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false
@@ -562,12 +562,12 @@ check_superuser=false
 
 [work_to_Storage]
 is_set=false
-text_source={{- .chezmoi.homeDir -}}/work/
-text_dest={{- .nas.mountDir -}}/{{- .nas.mainStorage -}}/Work/
+text_source={{ .chezmoi.homeDir }}/work/
+text_dest={{ .nas.mountDirStorage }}/Work/
 text_notes=
 text_com_before=
 text_com_after=
-text_addit=--exclude-from="{{- .chezmoi.homeDir -}}/.grsync/exclude.txt"
+text_addit=--exclude-from="{{ .chezmoi.homeDir }}/.grsync/exclude.txt"
 check_time=true
 check_perm=false
 check_owner=false

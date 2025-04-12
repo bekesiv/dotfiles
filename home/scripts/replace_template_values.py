@@ -47,7 +47,8 @@ def process_template_file(template_file: str, config: Dict[str, Any]) -> None:
     with open(template_file, 'r') as file:
         content = file.read()
 
-    for key, value in reversed_config.items():
+    for key, value in sorted(reversed_config.items(), key=lambda item: len(item[0]), reverse=True):
+        # print(f'    Checking key: {key}')
         if value.startswith('$secrets'):
             if key in content:
                 if not content.startswith('{{- $secrets := ("encrypted_dot_secrets.age" | include | decrypt | fromJson) -}}\n'):

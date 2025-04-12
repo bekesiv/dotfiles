@@ -1,0 +1,49 @@
+{{- $secrets := ("encrypted_dot_secrets.age" | include | decrypt | fromJson) -}}
+{
+    "editor.fontFamily": "jetbrains mono",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "editor.fontSize": 13,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.fontFamily": "jetbrainsmono nerd font",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontSize": 13,
+    "diffEditor.renderSideBySide": false,
+    "window.newWindowProfile": "Default",
+    "workbench.colorTheme": "Default Dark+ IntelliJ Theme",
+    "sshfs.configs": [
+        {
+            "name": "root@nas",
+            "host": "{{ $secrets.nasIpAddress }}",
+            "username": "root",
+            "privateKeyPath": "{{ .chezmoi.homeDir }}/.ssh/{{ $secrets.nasIdentityFilenameRoot }}"
+        },
+        {
+            "name": "{{ .chezmoi.username }}@nas",
+            "host": "{{ $secrets.nasIpAddress }}",
+            "privateKeyPath": "{{ .chezmoi.homeDir }}/.ssh/{{ $secrets.nasIdentityFilename }}",
+            "username": "{{ .chezmoi.username }}"
+        }
+    ],
+    "workspaceExplorer.workspaceStorageDirectory": "~/vscode_workspaces",
+    "window.zoomPerWindow": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0.75,
+    "workspaceSidebar.rootFolders": [
+        {
+            "path": "~/.vscode/workspaces"
+        }
+    ],
+    "python.createEnvironment.contentButton": "show",
+    "pylint.ignorePatterns": [
+        ""
+    ],
+    "window.titleBarStyle": "custom",
+    "github.gitProtocol": "ssh",
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredExtensions": [],
+    "extensions.allowed": "*",
+    "explorer.openEditors.visible": 16
+}
