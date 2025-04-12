@@ -99,7 +99,7 @@ alias fp='flatpak'
 alias ll='ls -Balch --time-style="+%Y-%m-%d %H:%M:%S"'
 #alias la='ls -A'
 #alias l='ls -CF'
-alias ssh-nas="ssh -i ~/.ssh/{{ $secrets.nasIdentityFilename }} {{ $secrets.nasUser }}@{{ $secrets.nasIpAddress }}"
+alias ssh-nas="ssh -i ~/.ssh/{{ $secrets.nasIdentityFilename }} {{ .chezmoi.username }}@{{ $secrets.nasIpAddress }}"
 alias sshr-nas="ssh -i ~/.ssh/{{ $secrets.nasIdentityFilenameRoot }} root@{{ $secrets.nasIpAddress }}"
 alias chansort='cd ~/.wineprefixes/ChanSort_32bit/drive_c/Program\ Files/ChanSort && WINEPREFIX=~/.wineprefixes/ChanSort_32bit/ wine ChanSort.exe'
 
