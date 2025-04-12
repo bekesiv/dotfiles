@@ -98,7 +98,7 @@ alias fp='flatpak'
 alias ll='ls -Balch --time-style="+%Y-%m-%d %H:%M:%S"'
 #alias la='ls -A'
 #alias l='ls -CF'
-alias chlt='find ~/.local/share/chezmoi/ | grep -E ".tmpl$"'
+alias chlt='find {{ .chezmoi.sourceDir }} -type f | grep -E ".tmpl$" | grep -v "\.venv"'
 alias ssh-nas="ssh -i ~/.ssh/{{ $secrets.nasIdentityFilename }} {{ .chezmoi.username }}@{{ $secrets.nasIpAddress }}"
 alias sshr-nas="ssh -i ~/.ssh/{{ $secrets.nasIdentityFilenameRoot }} root@{{ $secrets.nasIpAddress }}"
 alias chansort='cd ~/.wineprefixes/ChanSort_32bit/drive_c/Program\ Files/ChanSort && WINEPREFIX=~/.wineprefixes/ChanSort_32bit/ wine ChanSort.exe'
