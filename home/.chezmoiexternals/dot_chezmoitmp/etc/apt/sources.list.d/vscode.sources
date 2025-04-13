@@ -1,0 +1,2 @@
+type = "file"
+url = "file://{{ .chezmoi.sourceDir }}/files/home/vscode.sources"

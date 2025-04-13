@@ -1,0 +1,2 @@
+type = "file"
+url = "file://{{ .chezmoi.sourceDir }}/files/home/home_Alexx2000.sources"
