@@ -1,4 +1,4 @@
-["".local/share/fonts/JetBrains/TrueType/JetBrainsMono"]
+[".local/share/fonts/JetBrains/TrueType/JetBrainsMono Nerd Font"]
 type = "archive"
 url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
 exact = true
