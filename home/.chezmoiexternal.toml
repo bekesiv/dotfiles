@@ -6,3 +6,7 @@ exact = true
 [".chezmoitmp/home_Alexx2000.asc"]
 type = "file"
 url = "https://download.opensuse.org/repositories/home:Alexx2000:doublecmd-svn/xUbuntu_24.10/Release.key"
+
+[".chezmoitmp/suldr-keyring.asc"]
+type = "file"
+url = "file://files/suldr-keyring.asc"
