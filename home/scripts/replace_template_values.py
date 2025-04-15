@@ -66,7 +66,7 @@ if __name__ == "__main__":
     configuration = json.loads(run_command(command))
 
     cf = configuration['chezmoi']['config']
-    command = f'age -i {cf["age"]["identity"]} -d {cf["sourceDir"]}/home/.chezmoitemplates/dot_secrets.json.tmpl.age'
+    command = f'age -i {cf["age"]["identity"]} -d {cf["sourceDir"]}/home/.chezmoitemplates/secrets.json.tmpl.age'
     configuration['$secrets'] = json.loads(run_command(command))
 
     for i in excludes:
