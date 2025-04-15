@@ -1,4 +1,4 @@
-{{- $secrets := ("encrypted_dot_secrets.age" | include | decrypt | fromJson) -}}
+{{- $secrets := (".chezmoitemplates/secrets.json.tmpl.age" | include | decrypt | fromJson) -}}
 {
     "editor.fontFamily": "jetbrains mono",
     "workbench.settings.applyToAllProfiles": [

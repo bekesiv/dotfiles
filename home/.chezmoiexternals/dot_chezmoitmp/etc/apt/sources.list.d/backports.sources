@@ -1,3 +1,0 @@
-type = "file"
-url = "file://{{ .chezmoi.sourceDir }}/files/home/backports.sources"
-exact = true

@@ -1,4 +1,5 @@
-{{- $secrets := ("encrypted_dot_secrets.age" | include | decrypt | fromJson) -}}
+{{- $secrets := (".chezmoitemplates/secrets.json.tmpl.age" | include | decrypt | fromJson) -}}
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples

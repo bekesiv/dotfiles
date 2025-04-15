@@ -47,7 +47,7 @@ def process_template_file(template_file: str, config: Dict[str, Any]) -> None:
     with open(template_file, 'r') as file:
         content = file.read()
 
-    for key, value in sorted(reversed_config.items(), key=lambda item: len(item[0]), reverse=True):
+    for key, value in sorted(config.items(), key=lambda item: len(item[0]), reverse=True):
         # print(f'    Checking key: {key}')
         if value.startswith('$secrets'):
             if key in content:
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     configuration = json.loads(run_command(command))
 
     cf = configuration['chezmoi']['config']
-    command = f'age -i {cf["age"]["identity"]} -d {cf["sourceDir"]}/home/encrypted_dot_secrets.age'
+    command = f'age -i {cf["age"]["identity"]} -d {cf["sourceDir"]}/home/.chezmoitemplates/dot_secrets.json.tmpl.age'
     configuration['$secrets'] = json.loads(run_command(command))
 
     for i in excludes:
