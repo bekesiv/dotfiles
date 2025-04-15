@@ -2,6 +2,7 @@
 type = "archive"
 url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
 exact = true
-[".chezmoitmp/etc/apt/trusted.gpg.d/home_Alexx2000.asc"]
+
+[".chezmoitmp/home_Alexx2000.asc"]
 type = "file"
 url = "https://download.opensuse.org/repositories/home:Alexx2000:doublecmd-svn/xUbuntu_24.10/Release.key"

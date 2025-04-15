@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SRC="$HOME/.chezmoitmp/etc/apt/trusted.gpg.d/home_Alexx2000.asc"
+SRC="$HOME/.chezmoitmp/home_Alexx2000.asc"
 MID="${SRC%.asc}.gpg"
-DST="${MID/$HOME\/.chezmoitmp/}"
+DST="/etc/apt/trusted.gpg.d/home_Alexx2000.gpg"
 
 echo "🔄 Installing DoubleCDM key..."
 echo "Dearmoring GPG Key..."
