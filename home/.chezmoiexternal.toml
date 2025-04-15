@@ -9,4 +9,4 @@ url = "https://download.opensuse.org/repositories/home:Alexx2000:doublecmd-svn/x
 
 [".chezmoitmp/suldr-keyring.asc"]
 type = "file"
-url = "file://files/suldr-keyring.asc"
+url = "file:///home/tachikoma/.local/share/chezmoi/home/files/suldr-keyring.asc"
