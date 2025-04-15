@@ -1,6 +1,4 @@
-[jetbrainsmononerdfont]
+[.local/share/fonts/JetBrains/TrueType/jetbrainsmono]
 type = "archive"
 url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
 exact = true
-stripComponents = 0
-destination = "~/.local/share/fonts/JetBrains/TrueType"
