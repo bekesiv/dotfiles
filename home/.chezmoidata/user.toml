@@ -1,4 +1,4 @@
 [user]
 fullName = "Viktor Bekesi"
 email = "viktor.bekesi@outlook.com"
-fontDir = "{{ .chezmoi.homeDir }}/.local/share/fonts"
+fontDir = "$HOME/.local/share/fonts"
