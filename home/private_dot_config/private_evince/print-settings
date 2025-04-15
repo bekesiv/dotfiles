@@ -1,0 +1,32 @@
+[Print Settings]
+evince-print-setting-page-autorotate=true
+default-source=Auto
+media-type=None
+cups-EdgeControl=Normal
+cups-job-priority=50
+cups-MediaType=None
+cups-TonerSaveMode=Standard
+cups-number-up=1
+cups-JCLDarkness=NORMAL
+cover-before=none
+cups-JCLSkipBlankPages=False
+evince-print-setting-page-scale=1
+cups-Quality=600dpi
+print-at-time=
+evince-print-setting-page-size=false
+cover-after=none
+print-at=now
+printer=ML-2160
+cups-job-sheets=none,none
+cups-InputSlot=Auto
+
+[Page Setup]
+PPDName=A4
+DisplayName=A4
+Width=210
+Height=297
+MarginTop=6.3499999999999996
+MarginBottom=14.224
+MarginLeft=6.3499999999999996
+MarginRight=6.3499999999999996
+Orientation=portrait

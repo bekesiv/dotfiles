@@ -1,0 +1,12 @@
+{
+	"qtStyle": "Adwaita-Dark",
+	"font": "JetBrains Mono",
+	"fontSize": 11,
+	"externalDiff": "meld $L $R",
+	"externalMerge": "flatpak run org.kde.kdiff3 --merge $B $L $R --output $M",
+	"terminal": "gnome-terminal",
+	"dontShowAgain": [
+		"MergeMayCauseConflicts"
+	],
+	"donatePrompt": 1746057600
+}
