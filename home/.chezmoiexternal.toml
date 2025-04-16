@@ -17,6 +17,6 @@ url = "https://packages.microsoft.com/keys/microsoft.asc"
 
 [".icons/OpenZone_White"]
 type = "archive"
-url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_openzone-cursors-1.2.9.tar.xz.age"
+url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_OpenZone_White.tar.xz.age"
 encrypted = true
 exact = true
