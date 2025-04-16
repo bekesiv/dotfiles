@@ -3,6 +3,13 @@
     url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
     exact = true
 
+[".icons/OpenZone_White"]
+    type = "archive"
+    url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_OpenZone_White.tar.xz.age"
+    encrypted = true
+    exact = true
+    stripComponents = 1
+
 [".chezmoiinstall/home_Alexx2000.asc"]
     type = "file"
     url = "https://download.opensuse.org/repositories/home:Alexx2000:doublecmd-svn/xUbuntu_24.10/Release.key"
@@ -15,9 +22,6 @@
     type = "file"
     url = "https://packages.microsoft.com/keys/microsoft.asc"
 
-[".icons/OpenZone_White"]
-    type = "archive"
-    url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_OpenZone_White.tar.xz.age"
-    encrypted = true
-    exact = true
-    stripComponents = 1
+[".chezmoiinstall/brave_browser_install.sh"]
+    type = "file"
+    url = "https://dl.brave.com/install.sh"
