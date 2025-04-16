@@ -20,3 +20,4 @@ type = "archive"
 url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_OpenZone_White.tar.xz.age"
 encrypted = true
 exact = true
+stripComponents = 1
