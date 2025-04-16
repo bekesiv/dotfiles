@@ -10,4 +10,5 @@ sudo tee -a /etc/apt/sources.list.d/home\:Alexx2000.list > /dev/null <<EOL
 deb https://www.bchemnet.com/suldr/ debian extra
 EOL
 
-
+sudo apt update
+sudp apt install suld-driver2-1.00.39
