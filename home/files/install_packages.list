@@ -1,5 +1,6 @@
 git
 mc
+curl
 wget
 flatpak
 python3-poetry
