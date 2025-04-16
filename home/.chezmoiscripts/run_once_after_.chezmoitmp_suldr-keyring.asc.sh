@@ -8,7 +8,6 @@ echo "Adding custom repository /etc/apt/sources.list.d/..."
 sudo tee -a /etc/apt/sources.list.d/home\:Alexx2000.list > /dev/null <<EOL
 # Backport repository
 deb https://www.bchemnet.com/suldr/ debian extra
-fi
 EOL
 
 
