@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 files_dir="$CHEZMOI_SOURCE_DIR/files"
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
