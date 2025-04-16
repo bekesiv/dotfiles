@@ -4,7 +4,7 @@ set -e
 files_dir="$CHEZMOI_SOURCE_DIR/files"
 
 # Add custom lines to an existing file in /etc/apt
-{{- if eq .chezmoi.os.id "debian" }}
+{{- if eq .chezmoi.osRelease.id "debian" }}
 echo "Adding custom lines to /etc/apt/sources.list..."
 sudo tee -a /etc/apt/sources.list > /dev/null <<EOL
 # Backport repository
