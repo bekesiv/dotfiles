@@ -1,23 +1,23 @@
 [".local/share/fonts/JetBrains/TrueType/JetBrainsMono Nerd Font"]
-type = "archive"
-url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
-exact = true
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
+    exact = true
 
 [".chezmoiinstall/home_Alexx2000.asc"]
-type = "file"
-url = "https://download.opensuse.org/repositories/home:Alexx2000:doublecmd-svn/xUbuntu_24.10/Release.key"
+    type = "file"
+    url = "https://download.opensuse.org/repositories/home:Alexx2000:doublecmd-svn/xUbuntu_24.10/Release.key"
 
 [".chezmoiinstall/suldr-keyring.asc"]
-type = "file"
-url = "file://{{ .chezmoi.sourceDir }}/files/suldr-keyring.asc"
+    type = "file"
+    url = "file://{{ .chezmoi.sourceDir }}/files/suldr-keyring.asc"
 
 [".chezmoiinstall/microsoft.asc"]
-type = "file"
-url = "https://packages.microsoft.com/keys/microsoft.asc"
+    type = "file"
+    url = "https://packages.microsoft.com/keys/microsoft.asc"
 
 [".icons/OpenZone_White"]
-type = "archive"
-url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_OpenZone_White.tar.xz.age"
-encrypted = true
-exact = true
-stripComponents = 1
+    type = "archive"
+    url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_OpenZone_White.tar.xz.age"
+    encrypted = true
+    exact = true
+    stripComponents = 1
