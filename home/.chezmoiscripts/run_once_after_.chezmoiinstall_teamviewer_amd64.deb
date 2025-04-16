@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-cd $HOME/.chezmoiinstall
-sudo apt install -y ./teamviewer_amd64.deb
+sudo apt install -y libminizip1 policykit-1
+sudo dpkg -i $HOME/.chezmoiinstall/teamviewer_amd64.deb
