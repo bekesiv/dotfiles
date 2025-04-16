@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+files_dir="$CHEZMOI_SOURCE_DIR/files"
+
+# Add custom lines to an existing file in /etc/apt
+{{- if eq .chezmoi.os.id "debian" }}
+echo "Adding custom lines to /etc/apt/sources.list..."
+sudo tee -a /etc/apt/sources.list > /dev/null <<EOL
+# Backport repository
+deb https://deb.debian.org/debian bookworm-backports main non-free-firmware
+deb-src https://deb.debian.org/debian bookworm-backports main non-free-firmware
+fi
+EOL
+{{- end }}
+
+# Update package lists
+echo "🔄 Updating APT sources..."
+sudo apt update
+
+# Remove not needed packages
+sudo apt remove -y --autoremove --ignore-missing $(tr '\n' ' ' < "$files_dir/remove_packages.list")
+
+# Install missing packages
+sudo apt install -y --ignore-missing $(tr '\n' ' ' < "$files_dir/install_packages.list")
