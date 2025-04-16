@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+cd $HOME/.chezmoiinstall
+sudo dpkg -i "teamviewer_amd64.deb"

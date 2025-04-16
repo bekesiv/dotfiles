@@ -25,3 +25,11 @@
 [".chezmoiinstall/brave_browser_install.sh"]
     type = "file"
     url = "https://dl.brave.com/install.sh"
+
+[".chezmoiinstall/teamviewer_amd64.deb"]
+    type = "file"
+    url = "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+
+[".chezmoiinstall/oh-my-posh-install.sh"]
+    type = "file"
+    url = "https://ohmyposh.dev/install.sh"
