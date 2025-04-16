@@ -11,4 +11,4 @@ deb https://www.bchemnet.com/suldr/ debian extra
 EOL
 
 sudo apt update
-sudp apt install suld-driver2-1.00.39
+sudo apt install suld-driver2-1.00.39
