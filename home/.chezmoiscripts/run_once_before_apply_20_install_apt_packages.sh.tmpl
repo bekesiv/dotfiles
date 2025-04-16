@@ -8,8 +8,8 @@ files_dir="$CHEZMOI_SOURCE_DIR/files"
 echo "Adding custom lines to /etc/apt/sources.list..."
 sudo tee -a /etc/apt/sources.list > /dev/null <<EOL
 # Backport repository
-deb https://deb.debian.org/debian bookworm-backports main non-free-firmware
-deb-src https://deb.debian.org/debian bookworm-backports main non-free-firmware
+deb https://deb.debian.org/debian {{ .chezmoi.osRelease-versionCodename }}-backports main non-free-firmware
+deb-src https://deb.debian.org/debian {{ .chezmoi.osRelease-versionCodename }}-backports main non-free-firmware
 EOL
 {{- end }}
 

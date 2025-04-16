@@ -14,3 +14,9 @@ url = "file://{{ .chezmoi.sourceDir }}/files/suldr-keyring.asc"
 [".chezmoiinstall/microsoft.asc"]
 type = "file"
 url = "https://packages.microsoft.com/keys/microsoft.asc"
+
+[".icons/OpenZone_White"]
+type = "archive"
+url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_openzone-cursors-1.2.9.tar.xz.age"
+encrypted = true
+exact = true
