@@ -13,4 +13,4 @@ EOL
 sudo apt update
 sudo apt install -y code
 
-xargs -n 1 code --install-extension < "$CHEZMOI_SOURCE_DIR/files/extensions_vscode.list"
+xargs -n 1 code --force --install-extension < "$CHEZMOI_SOURCE_DIR/files/extensions_vscode.list"
