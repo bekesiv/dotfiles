@@ -18,8 +18,9 @@ sudo install -v -o root -g root -m 644 "$HOME/.chezmoiinstall/$COLOR_PROFILE_FIL
 #     sleep 1
 # done
 # echo "colord is active and responding 🟢"
-sudo colormgr import-profile "$COLORD_DIR/$COLOR_PROFILE_FILENAME" 
-sleep 3
+
+# sudo colormgr import-profile "$COLORD_DIR/$COLOR_PROFILE_FILENAME" 
+# sleep 3
 
 PROFILE_OBJECT_PATH=$(colormgr find-profile-by-filename "$COLORD_DIR/$COLOR_PROFILE_FILENAME" | awk '/Object Path:/ { print $3 }')
 
