@@ -22,6 +22,11 @@
     type = "file"
     url = "file://{{ .chezmoi.sourceDir }}/files/90-corectrl.rules"
 
+[".chezmoiinstall/LG_UltraWide_34WP65G.icc"]
+    type = "file"
+    encrypted = true
+    url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_LG_UltraWide_34WP65G.icc.age"
+
 [".chezmoiinstall/microsoft.asc"]
     type = "file"
     url = "https://packages.microsoft.com/keys/microsoft.asc"
