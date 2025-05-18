@@ -74,14 +74,6 @@
         true
       ],
       [
-        "authors",
-        true
-      ],
-      [
-        "title",
-        true
-      ],
-      [
         "inlibrary",
         false
       ],
@@ -119,14 +111,6 @@
     "last_modified_injected": true,
     "path_injected": true,
     "sort_history": [
-      [
-        "authors",
-        true
-      ],
-      [
-        "title",
-        true
-      ],
       [
         "authors",
         true
@@ -221,12 +205,21 @@
     false,
     300
   ],
-  "cover_grid_color": [
-    80,
-    80,
-    80
-  ],
-  "cover_grid_texture": null,
+  "cover_grid_background": {
+    "dark": [
+      45,
+      45,
+      45
+    ],
+    "dark_texture": null,
+    "light": [
+      80,
+      80,
+      80
+    ],
+    "light_texture": null,
+    "migrated": true
+  },
   "custcol-prefs-table-geometry": [
     83,
     78,
@@ -376,28 +369,28 @@
   "font_stretch": 0,
   "geometry-of-bulk_metadata_window_geometry": {
     "frame_geometry": {
-      "height": 1031,
-      "width": 2490,
-      "x": 25,
-      "y": 0
+      "height": 800,
+      "width": 2512,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
-      "height": 1000,
+      "height": 740,
       "width": 2490,
-      "x": 25,
-      "y": 31
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
-      "height": 1000,
+      "height": 740,
       "width": 2490,
-      "x": 25,
-      "y": 31
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAZAAAAAAAACdIAAAQGAAAAGQAAAB8AAAnSAAAEBgAAAAAAAAAACgAAAAAZAAAAHwAACdIAAAQG"
+      "__value__": "AdnQywADAAD////1////zwAACcQAAALuAAAAAAAAAAAAAAm5AAAC4wAAAAAAAAAACgAAAAAAAAAAAAAACbkAAALj"
     },
     "screen": {
       "depth": 32,
@@ -409,10 +402,10 @@
         "y": 0
       },
       "index_in_screens_list": 0,
-      "manufacturer": "LG Electronics",
+      "manufacturer": "GSM",
       "model": "LG HDR WFHD",
-      "name": "LG HDR WFHD",
-      "serial": "286583",
+      "name": "HDMI-1",
+      "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
         "width": 2560
@@ -427,10 +420,10 @@
   },
   "geometry-of-calibre_main_window_geometry": {
     "frame_geometry": {
-      "height": 1040,
-      "width": 2560,
-      "x": 0,
-      "y": -38
+      "height": 1062,
+      "width": 2582,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
@@ -441,14 +434,14 @@
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1007,
-      "width": 2554,
+      "height": 1002,
+      "width": 2560,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAA////2gAACf8AAAPpAAAAAAAAAAAAAAn5AAAD7gAAAAACAAAACgAAAAAAAAAAAAAACf8AAAPp"
+      "__value__": "AdnQywADAAD////1////zwAACgoAAAP0AAAAAAAAAAAAAAn/AAAD6QAAAAACAAAACgAAAAAAAAAAAAAACf8AAAPp"
     },
     "screen": {
       "depth": 32,
@@ -462,7 +455,7 @@
       "index_in_screens_list": 0,
       "manufacturer": "GSM",
       "model": "LG HDR WFHD",
-      "name": "DP-1",
+      "name": "HDMI-1",
       "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
@@ -529,28 +522,28 @@
   },
   "geometry-of-convert_bulk_dialog_geom": {
     "frame_geometry": {
-      "height": 779,
-      "width": 1461,
-      "x": 519,
-      "y": 165
+      "height": 808,
+      "width": 1483,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
       "height": 748,
       "width": 1461,
-      "x": 519,
-      "y": 196
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
       "height": 748,
       "width": 1461,
-      "x": 519,
-      "y": 196
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAIHAAAApQAAB7sAAAOvAAACBwAAAMQAAAe7AAADrwAAAAAAAAAACgAAAAIHAAAAxAAAB7sAAAOv"
+      "__value__": "AdnQywADAAD////1////zwAABb8AAAL2AAAAAAAAAAAAAAW0AAAC6wAAAAAAAAAACgAAAAAAAAAAAAAABbQAAALr"
     },
     "screen": {
       "depth": 32,
@@ -562,10 +555,10 @@
         "y": 0
       },
       "index_in_screens_list": 0,
-      "manufacturer": "LG Electronics",
+      "manufacturer": "GSM",
       "model": "LG HDR WFHD",
-      "name": "LG HDR WFHD",
-      "serial": "286583",
+      "name": "HDMI-1",
+      "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
         "width": 2560
@@ -682,28 +675,28 @@
   },
   "geometry-of-duplicates-question-dialog-geometry": {
     "frame_geometry": {
-      "height": 409,
-      "width": 616,
-      "x": 972,
-      "y": 298
+      "height": 438,
+      "width": 775,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
       "height": 378,
-      "width": 616,
-      "x": 972,
-      "y": 329
+      "width": 753,
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
       "height": 378,
-      "width": 616,
-      "x": 972,
-      "y": 329
+      "width": 753,
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAPMAAABKgAABjMAAALCAAADzAAAAUkAAAYzAAACwgAAAAAAAAAACgAAAAPMAAABSQAABjMAAALC"
+      "__value__": "AdnQywADAAD////1////zwAAAvsAAAGEAAAAAAAAAAAAAALwAAABeQAAAAAAAAAACgAAAAAAAAAAAAAAAvAAAAF5"
     },
     "screen": {
       "depth": 32,
@@ -715,10 +708,10 @@
         "y": 0
       },
       "index_in_screens_list": 0,
-      "manufacturer": "LG Electronics",
+      "manufacturer": "GSM",
       "model": "LG HDR WFHD",
-      "name": "LG HDR WFHD",
-      "serial": "286583",
+      "name": "HDMI-1",
+      "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
         "width": 2560
@@ -784,28 +777,28 @@
   },
   "geometry-of-jobs_dialog_geometry": {
     "frame_geometry": {
-      "height": 437,
-      "width": 712,
-      "x": 1021,
-      "y": 329
+      "height": 466,
+      "width": 775,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
       "height": 406,
-      "width": 712,
-      "x": 1021,
-      "y": 360
+      "width": 753,
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
       "height": 406,
-      "width": 712,
-      "x": 1021,
-      "y": 360
+      "width": 753,
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAP9AAABSQAABsQAAAL9AAAD/QAAAWgAAAbEAAAC/QAAAAAAAAAACgAAAAP9AAABaAAABsQAAAL9"
+      "__value__": "AdnQywADAAD////1////zwAAAvsAAAGgAAAAAAAAAAAAAALwAAABlQAAAAAAAAAACgAAAAAAAAAAAAAAAvAAAAGV"
     },
     "screen": {
       "depth": 32,
@@ -817,10 +810,10 @@
         "y": 0
       },
       "index_in_screens_list": 0,
-      "manufacturer": "LG Electronics",
+      "manufacturer": "GSM",
       "model": "LG HDR WFHD",
-      "name": "LG HDR WFHD",
-      "serial": "286583",
+      "name": "HDMI-1",
+      "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
         "width": 2560
@@ -835,28 +828,28 @@
   },
   "geometry-of-metasingle_window_geometry3": {
     "frame_geometry": {
-      "height": 947,
-      "width": 1884,
-      "x": 233,
-      "y": 36
+      "height": 976,
+      "width": 1906,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
       "height": 916,
       "width": 1884,
-      "x": 233,
-      "y": 67
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
       "height": 916,
       "width": 1884,
-      "x": 233,
-      "y": 67
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAADpAAAAJAAACEQAAAPWAAAA6QAAAEMAAAhEAAAD1gAAAAAAAAAACgAAAADpAAAAQwAACEQAAAPW"
+      "__value__": "AdnQywADAAD////1////zwAAB2YAAAOeAAAAAAAAAAAAAAdbAAADkwAAAAAAAAAACgAAAAAAAAAAAAAAB1sAAAOT"
     },
     "screen": {
       "depth": 32,
@@ -868,10 +861,10 @@
         "y": 0
       },
       "index_in_screens_list": 0,
-      "manufacturer": "LG Electronics",
+      "manufacturer": "GSM",
       "model": "LG HDR WFHD",
-      "name": "LG HDR WFHD",
-      "serial": "286583",
+      "name": "HDMI-1",
+      "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
         "width": 2560
@@ -937,28 +930,28 @@
   },
   "geometry-of-template_editor_dialog_geometry": {
     "frame_geometry": {
-      "height": 437,
-      "width": 584,
-      "x": 978,
-      "y": 293
+      "height": 466,
+      "width": 606,
+      "x": -11,
+      "y": -49
     },
     "full_screened": false,
     "geometry": {
       "height": 406,
       "width": 584,
-      "x": 978,
-      "y": 324
+      "x": 0,
+      "y": 0
     },
     "maximized": false,
     "normal_geometry": {
       "height": 406,
       "width": 584,
-      "x": 978,
-      "y": 324
+      "x": 0,
+      "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAPSAAABJQAABhkAAALZAAAD0gAAAUQAAAYZAAAC2QAAAAAAAAAACgAAAAPSAAABRAAABhkAAALZ"
+      "__value__": "AdnQywADAAD////1////zwAAAlIAAAGgAAAAAAAAAAAAAAJHAAABlQAAAAAAAAAACgAAAAAAAAAAAAAAAkcAAAGV"
     },
     "screen": {
       "depth": 32,
@@ -970,9 +963,9 @@
         "y": 0
       },
       "index_in_screens_list": 0,
-      "manufacturer": "",
-      "model": "",
-      "name": "LG HDR WFHD",
+      "manufacturer": "GSM",
+      "model": "LG HDR WFHD",
+      "name": "HDMI-1",
       "serial": "",
       "size_in_logical_pixels": {
         "height": 1080,
@@ -1002,8 +995,8 @@
     "__value__": "AdnQywADAAAAAACnAAAAWQAABl4AAAPNAAAAqAAAAHgAAAZdAAADzAAAAAAAAAAAB4AAAACoAAAAeAAABl0AAAPM"
   },
   "library_usage_stats": {
-    "/home/tachikoma/Calibre Library/Agi": 88,
-    "/home/tachikoma/Calibre Library/Anyu": 161,
+    "/home/tachikoma/Calibre Library/Agi": 94,
+    "/home/tachikoma/Calibre Library/Anyu": 163,
     "/home/tachikoma/Calibre Library/Dora": 12,
     "/home/tachikoma/Calibre Library/Tachikoma": 94
   },
@@ -1106,14 +1099,6 @@
         true
       ],
       [
-        "authors",
-        true
-      ],
-      [
-        "title",
-        true
-      ],
-      [
         "inlibrary",
         false
       ],
@@ -1146,7 +1131,7 @@
     "last_modified": true,
     "ondevice": true,
     "publisher": true,
-    "series": false,
+    "series": true,
     "size": true,
     "tags": true,
     "timestamp": false,
@@ -1198,7 +1183,8 @@
   },
   "template_editor_table_widths": [
     60,
-    459
+    34,
+    567
   ],
   "toolbar_icon_size": "mid-small",
   "windows_register_default_programs": "7.25.0",
