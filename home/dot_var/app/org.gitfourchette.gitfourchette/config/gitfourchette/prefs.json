@@ -1,5 +1,4 @@
 {
-	"qtStyle": "Adwaita-Dark",
 	"font": "JetBrains Mono",
 	"fontSize": 11,
 	"externalDiff": "meld $L $R",
@@ -8,5 +7,6 @@
 	"dontShowAgain": [
 		"MergeMayCauseConflicts"
 	],
-	"donatePrompt": 1746057600
+	"donatePrompt": 1755302400,
+	"_version": "1.3.0"
 }
