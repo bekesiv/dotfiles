@@ -16,8 +16,8 @@
 
 [".chezmoiinstall/suldr-keyring.asc"]
     type = "file"
-    # url = "file://{{ .chezmoi.sourceDir }}/files/suldr-keyring.asc"
-    url = "https://www.bchemnet.com/suldr/dists/debian/InRelease"
+    url = "file://{{ .chezmoi.sourceDir }}/files/suldr-keyring.asc"
+    # url = "https://www.bchemnet.com/suldr/dists/debian/InRelease"
 
 [".chezmoiinstall/90-corectrl.rules"]
     type = "file"

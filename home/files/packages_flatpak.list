@@ -11,7 +11,6 @@ io.github.realmazharhussain.GdmSettings
 io.gitlab.adhami3310.Impression
 md.obsidian.Obsidian
 net.mediaarea.MediaInfo
-no.mifi.losslesscut
 org.bunkus.mkvtoolnix-gui
 org.filezillaproject.Filezilla
 org.freecad.FreeCAD
@@ -26,3 +25,4 @@ org.qbittorrent.qBittorrent
 org.telegram.desktop
 org.videolan.VLC
 org.gimp.GIMP.Plugin.Resynthesizer//3
+org.shotcut.Shotcut
