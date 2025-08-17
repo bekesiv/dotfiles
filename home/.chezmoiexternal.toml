@@ -12,11 +12,12 @@
 
 [".chezmoiinstall/home_Alexx2000.asc"]
     type = "file"
-    url = "https://download.opensuse.org/repositories/home:/Alexx2000:/doublecmd-svn/Debian_13/Release.key"
+    url = "https://download.opensuse.org/repositories/home:/Alexx2000:/doublecmd-svn/Debian_{{ .chezmoi.osRelease.versionID }}/Release.key"
 
-[".chezmoiinstall/suldr-keyring.asc"]
+[".chezmoiinstall/suldr-keyring.gpg"]
     type = "file"
-    url = "file://{{ .chezmoi.sourceDir }}/files/suldr-keyring.asc"
+    encrypted = true
+    url = "file://{{ .chezmoi.sourceDir }}/files/encrypted_suldr-keyring.gpg.age"
     # url = "https://www.bchemnet.com/suldr/dists/debian/InRelease"
 
 [".chezmoiinstall/90-corectrl.rules"]
