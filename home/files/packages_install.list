@@ -22,6 +22,7 @@ inxi
 linux-image-amd64
 mc
 meld
+nala
 python3-poetry
 python3.11-venv
 python3-tk

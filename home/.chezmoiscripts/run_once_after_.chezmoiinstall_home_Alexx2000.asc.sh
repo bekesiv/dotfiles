@@ -5,9 +5,13 @@ DST="/etc/apt/trusted.gpg.d/home_Alexx2000.gpg"
 sudo gpg -v --dearmor --output "$DST" "$SRC"
 
 echo "Adding custom repository $DST..."
-sudo tee -a /etc/apt/sources.list.d/home\:Alexx2000.list > /dev/null <<EOL
-# Backport repository
-deb http://download.opensuse.org/repositories/home:/Alexx2000/Debian_12/ /
+sudo mkdir -p /etc/apt/sources.list.d
+sudo tee /etc/apt/sources.list.d/doublecommander > /dev/null <<EOL
+Types: deb
+URIs: http://download.opensuse.org/repositories/home:/Alexx2000/Debian_13/
+Suites: /
+Components: main
+Signed-By: $DST
 EOL
 
 sudo apt update
