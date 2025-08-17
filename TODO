@@ -1,3 +1,7 @@
 #TODO: TeamViewer repo file list -> Sources
 #TODO: Gnome extensions and their configurations
 #TODO: Wine 
+
+http://www.bchemnet.com/suldr/pool/debian/extra/su/suldr-keyring_2_all.deb
+terminal: sudo dpkg -i suldr-keyring_2_all.deb
+refresh repository (apt-get update or equivalent)
