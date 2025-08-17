@@ -6,7 +6,7 @@ sudo gpg -v --dearmor --output "$DST" "$SRC"
 
 echo "Adding custom repository $DST..."
 sudo mkdir -p /etc/apt/sources.list.d
-sudo tee /etc/apt/sources.list.d/doublecommander > /dev/null <<EOL
+sudo tee /etc/apt/sources.list.d/doublecommander.sources > /dev/null <<EOL
 Types: deb
 URIs: http://download.opensuse.org/repositories/home:/Alexx2000/Debian_13/
 Suites: /
