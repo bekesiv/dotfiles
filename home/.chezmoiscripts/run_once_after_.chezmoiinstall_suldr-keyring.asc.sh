@@ -15,4 +15,4 @@ Signed-By: $DST
 EOL
 
 sudo apt update
-sudo apt install -y suld-driver2-1.00.36
+sudo apt install -y suld-driver2-1.00.39
