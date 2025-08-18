@@ -5,3 +5,9 @@
 http://www.bchemnet.com/suldr/pool/debian/extra/su/suldr-keyring_2_all.deb
 terminal: sudo dpkg -i suldr-keyring_2_all.deb
 refresh repository (apt-get update or equivalent)
+
+sudo dpkg -S suldr-keyring
+suldr-keyring: /usr/share/doc/suldr-keyring
+suldr-keyring: /etc/apt/trusted.gpg.d/suldr-keyring.gpg
+suldr-keyring: /usr/share/doc/suldr-keyring/changelog.gz
+suldr-keyring: /usr/share/doc/suldr-keyring/copyright
