@@ -23,6 +23,8 @@ linux-image-amd64
 mc
 meld
 nala
+polkitd
+pkexec
 python3-poetry
 python3-venv
 python3-tk
