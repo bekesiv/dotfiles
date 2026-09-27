@@ -14,9 +14,6 @@
     type = "file"
     url = "https://download.opensuse.org/repositories/home:/Alexx2000:/doublecmd-svn/Debian_{{ .chezmoi.osRelease.versionID }}/Release.key"
 
-[".chezmoiinstall/suldr-keyring.deb"]
-    type = "file"
-    url = "https://www.bchemnet.com/suldr/pool/debian/extra/su/suldr-keyring_3_all.deb"
 
 [".chezmoiinstall/90-corectrl.rules"]
     type = "file"
